@@ -12,13 +12,13 @@ O Funcionário tem acesso ao estoque de produtos e pode realizar inserção e re
 Após o cadastro, os usuários poderão realizar alterações em seus dados cadastrais.
 
 ## Funcionalidades
-⋅⋅* 
-Registro e autenticação de usuários (Cliente e Funcionário)
-Gerenciamento de estoque de produtos (Funcionário)
-Carrinho de compras (Cliente)
-Pagamento via cartão de crédito (Cliente)
-Validação de número de cartão de crédito utilizando REGEX
-Edição de dados cadastrais (Cliente e Funcionário)
+
+* Registro e autenticação de usuários (Cliente e Funcionário)
+* Gerenciamento de estoque de produtos (Funcionário)
+* Carrinho de compras (Cliente)
+* Pagamento via cartão de crédito (Cliente)
+* Validação de número de cartão de crédito utilizando REGEX
+* Edição de dados cadastrais (Cliente e Funcionário)
 
 ## Tecnologias utilizadas
 
@@ -30,9 +30,9 @@ Edição de dados cadastrais (Cliente e Funcionário)
 * HTML/CSS
 
 ## Como utilizar o sistema
-⋅⋅* Clone este repositório em sua máquina
-⋅⋅* Configure as credenciais do banco de dados no arquivo application.properties
-⋅⋅* Execute a aplicação e acesse o sistema através do endereço http://localhost:8080 no navegador
+* Clone este repositório em sua máquina
+* Configure as credenciais do banco de dados no arquivo application.properties
+* Execute a aplicação e acesse o sistema através do endereço http://localhost:8080 no navegador
 
 ## Considerações finais
 Este projeto foi desenvolvido para fins de aprendizado e não deve ser utilizado em produção sem antes realizar testes adicionais e ajustes necessários. Se você encontrar algum problema ou bug no sistema, sinta-se à vontade para abrir uma issue neste repositório.
