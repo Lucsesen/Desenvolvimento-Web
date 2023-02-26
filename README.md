@@ -22,12 +22,12 @@ Edição de dados cadastrais (Cliente e Funcionário)
 
 ## Tecnologias utilizadas
 
-⋅⋅* Java
-⋅⋅* Spring Boot
-⋅⋅* JPA/Hibernate
-⋅⋅* MySQL
-⋅⋅* Thymeleaf
-⋅⋅* HTML/CSS
+* Java
+* Spring Boot
+* JPA/Hibernate
+* MySQL
+* Thymeleaf
+* HTML/CSS
 
 ## Como utilizar o sistema
 ⋅⋅* Clone este repositório em sua máquina
