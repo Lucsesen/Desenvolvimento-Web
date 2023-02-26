@@ -1,7 +1,7 @@
 # Desenvolvimento Web
 
 
-# Sistema de Registro de Pedidos para Loja de Bebidas Online
+# Sistema de Registro de Pedidos para Loja de Bebidas Online GetDrink 
 
 O objetivo deste sistema é registrar pedidos para uma loja de bebidas online. Para acessar o sistema, é necessário ter uma conta de usuário para login.
 
