@@ -1,8 +1,9 @@
 # Desenvolvimento Web
 
 
-# Sistema de Registro de Pedidos para Loja de Bebidas Online GetDrink 
-![alt text][logo]: https://cdn-icons-png.flaticon.com/512/38/38706.png
+# Sistema de Registro de Pedidos para Loja de Bebidas Online GetDrink ![alt text][logo]
+
+[logo]: https://cdn-icons-png.flaticon.com/512/38/38706.png
 
 O objetivo deste sistema é registrar pedidos para uma loja de bebidas online. Para acessar o sistema, é necessário ter uma conta de usuário para login.
 
