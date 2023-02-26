@@ -30,7 +30,7 @@ Após o cadastro, os usuários poderão realizar alterações em seus dados cada
 * HTML/CSS
 
 ## Como utilizar o sistema
-* Clone este repositório em sua máquina
+* Clone este repositório no seu computador
 * Configure as credenciais do banco de dados no arquivo application.properties
 * Execute a aplicação e acesse o sistema através do endereço http://localhost:8080 no navegador
 
