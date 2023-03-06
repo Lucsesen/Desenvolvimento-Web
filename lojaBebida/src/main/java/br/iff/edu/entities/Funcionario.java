@@ -1,7 +1,5 @@
 package br.iff.edu.entities;
 
-import java.io.Serializable;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="funcionario")
-public class Funcionario implements Serializable{
+public class Funcionario{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

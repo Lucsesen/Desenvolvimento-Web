@@ -57,7 +57,7 @@ public class Produto {
     public double getPrecoCusto() {
         return precoCusto;
     }
-    public void setPrecoCusto(int precoCusto) {
+    public void setPrecoCusto(double precoCusto) {
         this.precoCusto = precoCusto;
     }
 
