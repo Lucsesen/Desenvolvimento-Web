@@ -1,12 +1,21 @@
 package br.iff.edu.entities;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
-@Embeddable
+@Entity
 @Table(name="endereco")
 public class Endereco {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="id")
+	private long id;
 	
 	@Column(name="rua")
     private String rua;
@@ -22,6 +31,7 @@ public class Endereco {
 	
 	@Column(name="cidade")
     private String cidade;
+	
 
     public Endereco(String rua, int numero, String bairro, String cep, String cidade) {
         this.rua = rua;
@@ -30,6 +40,11 @@ public class Endereco {
         this.cep = cep;
         this.cidade = cidade;
     }
+
+    public Endereco() {
+
+    }
+
     public String getRua() {
         return rua;
     }
