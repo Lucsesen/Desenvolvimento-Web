@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 
@@ -25,13 +26,20 @@ public class Pagamento {
 	
 	@Column(name="descricao")
     private String descricao;
+	
+	@OneToOne
+	private Pedido pedido;
     
     public Pagamento(double valor, int nf, String descricao) {
     	this.descricao = descricao;
     	this.valor = valor;
     	this.nf = nf;
     }
-    
+
+    public Pagamento() {
+
+    }
+
     public double getValor() {
         return valor;
     }

@@ -1,10 +1,15 @@
 package br.iff.edu.entities;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -24,13 +29,26 @@ public class Pedido {
 	
 	@Column(name="qtdProduto")
     private int qtdProduto;
+	
+	@OneToOne
+	@JoinColumn(name="fk_pagamento")
+	private Pagamento pagamento;
+	
+	@OneToMany
+	@JoinColumn(name="id_pedido")
+	private List<Produto> produtos;
        
-    public Pedido(String statusPedido, double valorTotal, int qtdProduto) {
+	public Pedido(String statusPedido, double valorTotal, int qtdProduto) {
 		this.statusPedido = statusPedido;
 		this.valorTotal = valorTotal;
 		this.qtdProduto = qtdProduto;
 	}
-	public String getStatusPedido() {
+
+    public Pedido() {
+
+    }
+
+    public String getStatusPedido() {
         return statusPedido;
     }
     public void setStatusPedido(String statusPedido) {
@@ -45,7 +63,19 @@ public class Pedido {
     public int getQtdProduto() {
         return qtdProduto;
     }
-    public void setQtdProduto(int qtdProduto) {
+    public void setQtdProdutos(int qtdProduto) {
         this.qtdProduto = qtdProduto;
+    }
+    public Pagamento getPagamento() {
+    	return pagamento;
+    }
+    public void setPagamento(Pagamento pagamento) {
+    	this.pagamento = pagamento;
+    }
+    public List<Produto> getProdutos() {
+    	return produtos;
+    }
+    public void setProduto(List<Produto> produtos) {
+    	this.produtos = produtos;
     }
 }

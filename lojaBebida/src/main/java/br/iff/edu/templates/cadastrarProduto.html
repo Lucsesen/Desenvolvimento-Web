@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" alt=""> <img src="/Desenvolvimento-Web-master/Docs/GETdRINK.png" alt=""> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Produtos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="#">Alterar</a></li>
+            <li><a class="dropdown-item" href="#">Excluir</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pedidos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="#">Alterar</a></li>
+            <li><a class="dropdown-item" href="#">Excluir</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Sair</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1>Cadastrar produto</h1><br>
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Nome</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Exemplo: Leite">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Código de barra</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="84651874546">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Preço de custo</label>
+  <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="R$">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Preço de venda</label>
+  <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="R$">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
