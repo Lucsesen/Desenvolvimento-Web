@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR" class="h-100" data-bs-theme="auto" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragmento :: head">
+  <title>Alterar cliente</title>
+</head>
+<body class="d-flex h-100 text-center text-bg-dark">
+
+<header class="mb-auto">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">GetDrink</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Perfil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Atualizar perfil</a></li>
+              <li><a class="dropdown-item" href="#">Visualizar perfil</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pedidos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Realizar pedidos</a></li>
+              <li><a class="dropdown-item" href="#">Visualizar histórico</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/login">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <form class="row g-3">
+    <div class="col-md-1">
+      <label for="idCliente" class="form-label">ID</label>
+      <input type="text" class="form-control" id="idCliente">
+    </div>
+    <div class="col-md-4">
+      <label for="usuario" class="form-label">Usuario</label>
+      <input type="text" class="form-control" id="usuario">
+    </div>
+    <div class="col-md-5">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome">
+    </div>
+    <div class="col-2">
+      <label for="cpf" class="form-label">CPF</label>
+      <input type="text" class="form-control" id="cpf" placeholder="11564848941">
+    </div>
+    <div class="col-3">
+      <label for="rua" class="form-label">Rua</label>
+      <input type="text" class="form-control" id="rua" placeholder="Avenida 28 de março">
+    </div>
+    <div class="col-1">
+      <label for="numero" class="form-label">Numero</label>
+      <input type="text" class="form-control" id="numero" placeholder="132">
+    </div>
+    <div class="col-2">
+      <label for="bairro" class="form-label">Bairro</label>
+      <input type="text" class="form-control" id="bairro" placeholder="Parque Santo Amaro">
+    </div>
+    <div class="col-2">
+      <label for="cidade" class="form-label">Cidade</label>
+      <input type="text" class="form-control" id="cidade" placeholder="Campos dos Goytacazes">
+    </div>
+    <div class="col-2">
+      <label for="cep" class="form-label">CEP</label>
+      <input type="text" class="form-control" id="cep" placeholder="28026142">
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Alterar</button>
+    </div>
+  </form>
+
+</main>
+
+<foot th:replace="fragmento :: footer"></foot>
+<div th:replace="fragmento :: script"></div>
+</body>
+</html>
