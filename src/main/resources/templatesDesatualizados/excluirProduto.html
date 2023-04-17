@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR" class="h-100" data-bs-theme="auto" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragmento :: head">
+  <title>Home Funcionario</title>
+</head>
+<body class="d-flex h-100 text-center text-bg-dark">
+
+<header class="mb-auto">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">GetDrink</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Produto
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Adicionar</a></li>
+              <li><a class="dropdown-item" href="#">Excluir</a></li>
+              <li><a class="dropdown-item" href="#">Alterar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pedidos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Histórico</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/login">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h2>Digite o ID do produto que deseja excluir</h2>
+  <br><br>
+  <form action="/view/FuncionarioViewController" method="DELETE">
+    <div class="mb-3">
+      <input type="id" class="form-control" id="inputId" aria-describedby="id">
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Excluir</button>
+  </form>
+</main>
+
+<foot th:replace="fragmento :: footer"></foot>
+<div th:replace="fragmento :: script"></div>
+</body>
+</html>
