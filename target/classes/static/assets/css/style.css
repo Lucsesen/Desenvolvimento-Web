@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+
+form {
+  max-width: 400px;
+  font-size: 2.5rem;
+}
+
+@font-face {
+  font-family: 'Italianno';
+  src: url('/Italianno-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Italianno', cursive;
+
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
