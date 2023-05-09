@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layoutBase :: head">
+  <title>GetDrink</title>
+</head>
+
+<body>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <header th:replace="layoutBase :: header">
+
+      </header>
+    </div>
+  </div>
+  <main>
+    <h2>
+      Adicionar pedido
+    </h2> <br><br>
+    <div class="row">
+      <div class="col">
+        <h2>Digite os dados do pedido</h2>
+        <br><br>
+        <form action="/Pedido/update" method="POST">
+          <input type="hidden" name="_method" value="PUT" />
+          <div class="mb-3">
+            <label for="id" class="form-label">ID</label>
+            <input type="text" class="form-control" id="id" name="id" placeholder="1348" required>
+          </div>
+          <div class="mb-3">
+            <label for="statusPedido" class="form-label">Status do pedido</label>
+            <select class="form-select" id="statusPedido" name="statusPedido" required>
+              <option value="entregue">Entregue</option>
+              <option value="pendente">Pendente</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="valorTotal" class="form-label">Valor total</label>
+            <input type="text" class="form-control" id="valorTotal" name="valorTotal" required>
+          </div>
+          <div class="mb-3">
+            <label for="dataPedido" class="form-label">Data:</label>
+            <input type="date" class="form-control" id="dataPedido" name="dataPedido" required>
+          </div>
+          <br><br>
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+      </div>
+      <div class="col">
+        <img th:src="@{/assets/imagens/GETdRINK.png}" alt="" class="img-fluid">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col">
+        <footer th:replace="layoutBase :: footer">
+        </footer>
+      </div>
+    </div>
+  </footer>
+</div>
+<div th:replace="layoutBase :: script">
+</div>
+</body>
+
+</html>
